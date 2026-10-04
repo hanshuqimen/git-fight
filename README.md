@@ -4,11 +4,14 @@ Commit 化作攻击，Star 铸成血量，编程语言成为技能。输入两�
 
 纯静态前端：Vite + TypeScript strict + 原生 DOM/CSS + Canvas。无登录、OAuth、后端、数据库、历史记录和运行时第三方依赖。
 
+开源仓库：[hanshuqimen/git-fight](https://github.com/hanshuqimen/git-fight)，使用 [MIT 许可](LICENSE)。
+
 ## 本地运行
 
 建议 Node.js 24 LTS。项目开发依赖已锁定为 Vite 7.3.6、TypeScript 5.9.3 和 Vitest 3.2.7。
 
 ```powershell
+git clone https://github.com/hanshuqimen/git-fight.git
 cd git-fight
 npm install
 npm run dev
@@ -29,7 +32,7 @@ npm run build    # TypeScript 检查，然后构建到 dist/
 npm run preview  # 预览生产构建
 ```
 
-同名脚本可用 `pnpm run test/build/preview` 执行。`dist/` 可由任意静态 HTTP 服务托管；本项目没有服务端代理，也不要求单文件或断网运行。项目未部署、未发布。
+同名脚本可用 `pnpm run test/build/preview` 执行。`dist/` 可由任意静态 HTTP 服务托管；本项目没有服务端代理，也不要求单文件或断网运行。源码已公开到 GitHub，尚未部署在线站点或发布版本包。
 
 ## 使用流程
 
