@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>git-fight · 模拟响应验收</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" />
+</head>
+<body>
+  <aside style="padding:12px 20px;background:#453416;color:#fff1cd;font:12px system-ui;display:flex;gap:15px;align-items:center;flex-wrap:wrap">
+    <strong>仅供测试：GitHub API 使用模拟数据，头像仍从 GitHub CDN 加载。</strong>
+    <label>响应模式 <select id="fixture-mode"><option value="success">正常</option><option value="missing">用户不存在</option><option value="network">网络失败</option><option value="slow">慢请求 / 取消</option><option value="avatar">头像失败</option><option value="long-name">长昵称 / HTML 文本</option><option value="long-battle">30 回合</option><option value="burst">一击击倒</option><option value="no-language">无语言</option></select></label>
+    <span>API 请求数：<b id="fixture-request-count">0</b></span>
+    <span id="fixture-motion"></span>
+  </aside>
+  <div id="app"></div>
+  <script type="module" src="./fixture.ts"></script>
+</body>
+</html>
